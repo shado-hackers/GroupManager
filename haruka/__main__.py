@@ -38,7 +38,7 @@ Follow meh [now](https://mobile.twitter.com/Lusifer_noob)
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 
- Add me to a group by clicking [here](http://t.me/tg_GroupManagerBot?startgroup=true).
+ Add me to a group by clicking [✔️ADD ME YOUR GROUP ➕](http://t.me/tg_GroupManagerBot?startgroup=true).
 """
 
 
@@ -156,7 +156,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
+    keyboard = [[InlineKeyboardButton(text="♻️ Add me to your group ➕", callback_data="http://t.me/tg_GroupManagerBot?startgroup=true")]]
     keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
