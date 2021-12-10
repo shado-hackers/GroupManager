@@ -4,7 +4,7 @@ from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
 from haruka import dispatcher
-
+from haruka.modules.disable import DisableAbleCommandHandler
 
 def npaste(update: Update, context: CallbackContext):
     args = context.args
