@@ -61,8 +61,8 @@ def hastebin(update: Update, context: CallbackContext):
     msg.reply_text(pasted, disable_web_page_preview=True)
     
    
-NEKO_BIN_HANDLER = DisableAbleCommandHandler("npaste", paste, run_async=True)
-HASTE_BIN_HANDLER = DisableAbleCommandHandler("paste", hastebin, run_async=True)
+NEKO_BIN_HANDLER = CommandHandler("npaste", paste, run_async=True)
+HASTE_BIN_HANDLER = CommandHandler("paste", hastebin, run_async=True)
 
 dispatcher.add_handler(NEKO_BIN_HANDLER)
 dispatcher.add_handler(HASTE_BIN_HANDLER)
